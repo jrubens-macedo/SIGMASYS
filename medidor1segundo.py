@@ -16,8 +16,8 @@ def coletar_dados():
         # Início do tempo para medir o tempo de execução
         inicio = time.time()
 
-        #response = requests.get('https://www.pqsys.com.br/remoteScreen/pq99_6169d4ee0ba83243d39fa0cc/api/fasor')
-        response = requests.get('https://www.pqsys.com.br/remoteScreen/pq78_614a288f580e4c20e5c11d0c/api/fasor')
+        response = requests.get('https://www.pqsys.com.br/remoteScreen/pq99_6169d4ee0ba83243d39fa0cc/api/fasor')
+        #response = requests.get('https://www.pqsys.com.br/remoteScreen/pq78_614a288f580e4c20e5c11d0c/api/fasor')
         data = response.json()
 
         # Acessa os valores registrados no medidor via API
